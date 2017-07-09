@@ -1,0 +1,69 @@
+{
+   "nav_icon": "chester_icon.png",
+   "firstPhotoId":"112379",
+   "firstPhotoRotation":150,
+   "soundEffects": {
+      "navButton": {
+         "onEnter": {
+            "uri": "switch-flip.wav",
+            "attributionUri": "https://www.freesound.org/people/ianstargem/sounds/278205/"
+         },
+         "onClick": {
+            "uri": "menu-click.wav",
+            "attributionUri": "https://www.freesound.org/people/fins/sounds/146721/"
+         }
+      },
+      "infoButton": {
+         "onEnter": {
+            "uri": "switch-flip.wav",
+            "attributionUri": "https://www.freesound.org/people/ianstargem/sounds/278205/"
+         }
+      },
+      "ambient": {
+         "uri": "tourist.wav",
+         "attributionUri": "https://freesound.org/people/Manicciola/sounds/173316/",
+         "loop": true,
+         "volume": 0.50
+      }
+   },
+   "photos":{
+      "112362":{
+         "rotationOffset": 0,
+         "uri":"initial.jpg",
+         "tooltips":[
+            {
+               "text":"Back",
+               "rotationY": 80.929,
+               "linkedPhotoId":"112379"
+            },
+            {
+               "type": "image",
+               "rotationY": 170,
+               "width": 1.020,
+               "height": 1.388,
+               "source":"art.png"
+            }
+         ]
+      },
+      "112379":{
+         "rotationOffset": -120,
+         "uri":"step1.jpg",
+         "tooltips":[
+            {
+               "text":"Enter",
+               "rotationY": 125.525,
+               "linkedPhotoId":"112362"
+            },
+            {
+               "type": "textblock",
+               "title": "The Very Essence of Existence",
+               "text": "Everything has two principles that explains its being, essence and existence.",
+               "attribution": "360 Photos courtesy of flickr.com",
+               "rotationY": 0,
+               "width": 1.5,
+               "height": 1.5
+            }
+         ]
+      }
+   }
+}
