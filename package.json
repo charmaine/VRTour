@@ -19,7 +19,7 @@
   "scripts": {
     "prestart": "node -e \"try{require('fs').statSync('node_modules')}catch(e){process.exit(1)}\" || npm install",
     "start": "node node_modules/react-native/local-cli/cli.js start --root .",
-    "open": "node -e \"require('xopen')('http://localhost:8081/Samples/')\"",
+    "open": "node -e \"require('xopen')('http://localhost:8081/')\"",
     "create": "node react-vr-cli/index.js"
   }
 }
