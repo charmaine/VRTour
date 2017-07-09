@@ -1,25 +1,31 @@
 {
+  "name": "test_vr",
+  "version": "0.0.1",
   "private": true,
-  "version": "0.3.1",
-  "description": "React VR Preview Bundle",
-  "dependencies": {
-    "ovrui": "0.1.5",
-    "ovr-audio": "0.1.5",
-    "ovr-video": "0.1.2",
-    "react": "15.4.1",
-    "react-native": "0.42.0",
-    "three": "^0.80.1",
-    "react-vr": "0.1.7",
-    "react-vr-web": "0.1.7",
-    "xopen": "1.0.0",
-    "diff" : "*",
-    "request" : "*",
-    "md5-file" : "*"
-  },
   "scripts": {
-    "prestart": "node -e \"try{require('fs').statSync('node_modules')}catch(e){process.exit(1)}\" || npm install",
-    "start": "node node_modules/react-native/local-cli/cli.js start --root .",
-    "open": "node -e \"require('xopen')('http://localhost:8081/')\"",
-    "create": "node react-vr-cli/index.js"
+    "start": "node -e \"console.log('open browser at http://localhost:8081/vr/\\n\\n');\" && node node_modules/react-native/local-cli/cli.js start",
+    "bundle": "node node_modules/react-vr/scripts/bundle.js",
+    "open": "node -e \"require('xopen')('http://localhost:8081/vr/')\"",
+    "devtools": "react-devtools",
+    "test": "jest"
+  },
+  "dependencies": {
+    "ovrui": "~1.4.0",
+    "react": "~15.4.1",
+    "react-native": "~0.42.0",
+    "three": "^0.80.1",
+    "react-vr": "~1.4.0",
+    "react-vr-web": "~1.4.0"
+  },
+  "devDependencies": {
+    "babel-jest": "^19.0.0",
+    "babel-preset-react-native": "^1.9.1",
+    "jest": "^19.0.2",
+    "react-devtools": "^2.1.3",
+    "react-test-renderer": "~15.4.1",
+    "xopen": "1.0.0"
+  },
+  "jest": {
+    "preset": "react-vr"
   }
 }
